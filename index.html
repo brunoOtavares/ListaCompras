@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="bodyElement">
+        <section class="ElementAdd">
+            <h1>Lista de Compras</h1>
+            <input id="item" type="text" placeholder="Adicione um item...">
+            <input id="valor" type="number" placeholder="Valor..." step="0.01">
+            <input id="quantidade" type="number" placeholder="Quantidade..." min="1" value="1">
+            <button onclick="adicionar()">Adicionar</button>
+            <div class="ElementConfirm"></div>
+        </section>
+        <section>
+            <ul id="ElementList" class="ElementList">   
+            </ul>
+            <h2>Total: <span id="total">0.00</span></h2>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
